@@ -19,17 +19,23 @@ mongoose
   });
 
 //user schema
-const userSchema = mongoose.Schema({
-  username: {
-    type: String,
-  },
-  password: {
-    type: String,
-  },
-  email: {
-    type: String,
-  },
-});
+const userSchema = mongoose.Schema(
+  {
+    username: {
+      type: String,
+      // required: [true, "username is Mandatory"],
+    },
+    password: {
+      type: String,
+      // required: [true, "password is Mandatory"],
+      // minLength: [8, "password is must be atleast 8 charcater..."],
+    },
+    email: {
+      type: String,
+    },
+  }
+  // {timestamps:true}
+);
 const userModel = mongoose.model("users", userSchema);
 
 const foodScehma = mongoose.Schema({

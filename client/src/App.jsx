@@ -9,6 +9,7 @@ import { UserContext } from './contexts/UserContext'
 import Private from './componets/Private'
 import Diet from './componets/Diet'
 import Addfood from './componets/Addfood'
+import Home from './componets/Home'
 
 const App = () => {
   
@@ -24,8 +25,10 @@ const App = () => {
     <Route path='/' element={<Login/>}/>
       <Route path='/register' element={<Register/>}/>
       <Route path='/login' element={<Login/>}/>
-
+      <Route path='/login' element={<Login/>}/>
+      
       //private routing
+      <Route path='/home' element={<Private component={Home}/>}/>
       <Route path='/track' element={<Private component={Track}/>}/>
       <Route path='/diet' element={<Private component={Diet}/>}/>
       <Route path='/add' element={<Addfood/>}/>

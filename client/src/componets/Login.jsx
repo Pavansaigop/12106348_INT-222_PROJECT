@@ -54,7 +54,7 @@ const Login = () => {
                 localStorage.setItem("nutrify-user",JSON.stringify(data))
                 loggedData.setLoggedUser(data);
                 
-                navigate('/diet')
+                navigate('/home')
             }
             
         })
@@ -65,16 +65,16 @@ const Login = () => {
     }
 
   return (
-    <section className='container' >
+    <section className='container login-page' >
         <form className='form' onSubmit={handleSubmit}>
-            <h1>Login To fitness</h1>
+            <h1 style={{color:"black"}}>Login To fitness</h1>
 
             <input type='email' className='inp' required placeholder='Enter email' name="email" value={user.email} onChange={handleInput} />
 
             <input type='password' className='inp' minLength={6} placeholder='Enter password' name="password" value={user.password} onChange={handleInput} />
            
             <button className='btn'>Login</button>
-            <p>Don't Have Account? <Link to='/register'>Register</Link></p>
+            <p style={{color:"black"}}>Don't Have Account? <Link to='/register' style={{color:"blue"}}>Register</Link></p>
             <p className={message.type}>{message.text}</p>
         </form>
     </section>

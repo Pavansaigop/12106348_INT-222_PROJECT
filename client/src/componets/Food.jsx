@@ -44,6 +44,7 @@ const Food = ({food}) => {
             },
             quantity:quantity
         }
+        alert(food.name +" added Successfully")
         fetch('http://localhost:4000/track',{
             method:"POST",
             body:JSON.stringify(trackedItem),
@@ -59,6 +60,7 @@ const Food = ({food}) => {
         .catch((err)=>{
             console.log(err);
         })
+        
         // console.log(track);
     }
 

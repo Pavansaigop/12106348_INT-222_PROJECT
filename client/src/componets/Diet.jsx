@@ -79,6 +79,8 @@ const Diet = () => {
                         })
                     }
 
+                    <h1 style={{color:"yellow", marginTop:'50px'}}>Total Calcories:</h1>
+
                 {
                     items.length!==0?
                     (

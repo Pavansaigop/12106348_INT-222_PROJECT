@@ -56,7 +56,7 @@ const Track = () => {
     <section className='container track-container'>
       <Header/>
       <div className='search'>
-          <input type='search' className='search-inp' placeholder='Search Food item' onChange={handleSearch}/>
+          <input type='search' className='search-inp' placeholder='Search Food item'  onChange={handleSearch}/>
 
           {
             foodItems.length!==0?(

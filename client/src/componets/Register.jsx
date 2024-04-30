@@ -49,9 +49,9 @@ const Register = () => {
       }
     
   return (
-    <section className='container'>
+    <section className='container register-page'>
         <form className='form' onSubmit={handleSubmit}>
-            <h1>Start your fitness</h1>
+            <h1 style={{color:"#6ff3c0" ,fontSize:"35px"}}>Start your fitness</h1>
             <input type='text' className='inp' required placeholder='Enter Name' name="name" value={data.name} onChange={handleInput} />
             <input type='text' className='inp' required placeholder='Enter Username' name="username" value={data.username} onChange={handleInput}/>
             <input type='password' className='inp' maxLength={6} placeholder='Enter password' name="password" value={data.password} onChange={handleInput} />
